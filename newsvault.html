@@ -899,7 +899,7 @@
 
     const payload = { text: text, language: selectedLang };
 
-    fetch('http://localhost:5000/analyze', {
+    fetch('https://newsvault-backend.vercel.app/analyze', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
